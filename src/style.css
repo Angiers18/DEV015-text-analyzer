@@ -1,0 +1,45 @@
+header{
+    color:crimson;
+    text-align: center;
+}
+
+.box{
+    box-sizing: border-box;
+    background-color: rgb(135, 179, 228);
+    width: 800px;
+    height: auto;
+    margin: auto 25%;
+    padding: 20px;
+    border: 8px solid #14ff82;
+    border-radius: 30px;
+}
+
+
+.metricas{
+    color:blue;
+    list-style: none;
+    display: inline-block;
+    background-color: azure;
+    margin-right: 10px;
+    border-radius: 3px;
+   
+    
+}
+
+textarea[name="user-input"]{
+    background-color: rgb(80, 214, 219);
+    width: 700px;
+    margin-left: 17px;
+    height: 300px;
+    border-radius: 10px;
+    line-height: 1.6;
+}
+
+#reset-button{
+    background-color:cornflowerblue;
+    margin: 25px 0 0 300px;
+}
+
+footer{
+    text-align: center;
+}
