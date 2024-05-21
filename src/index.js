@@ -26,12 +26,9 @@ button.addEventListener("click",borrar);
 //addEventListener del textarea 
   const textarea = document.querySelector("textarea");
   function escribir(){
+    textarea.value
   }
   textarea.addEventListener("input",escribir);
-
-
-
-
 
 
 

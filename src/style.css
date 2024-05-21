@@ -3,13 +3,13 @@ header{
     text-align: center;
 }
 
-.box{
+div{
     box-sizing: border-box;
     background-color: rgb(135, 179, 228);
     width: 800px;
     height: auto;
     margin: auto 25%;
-    padding: 20px;
+    padding: 10px;
     border: 8px solid #14ff82;
     border-radius: 30px;
 }
@@ -20,9 +20,12 @@ header{
     list-style: none;
     display: inline-block;
     background-color: azure;
-    margin-right: 10px;
-    border-radius: 3px;
-   
+    margin: 5px 15px;
+    border-radius: 15px;
+    border: 0.5px solid red;
+    padding: 0.5rem;
+    font-size: 20px;
+  
     
 }
 
