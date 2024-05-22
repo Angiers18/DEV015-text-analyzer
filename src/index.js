@@ -39,22 +39,22 @@ button.addEventListener("click",borrar);
 //                                                                 PRUEBA 2
 
 let m1 = document.getElementsByClassName("metricas")[0];
-if (m1) m1.textContent = "Caracteres:" + " 255";
+if (m1) m1.textContent = "Caracteres:" + " ";
 
 let m2 = document.getElementsByClassName("metricas")[1];
-if (m2) m2.textContent = "Caracteres Sin Espacios:" + " 156";
+if (m2) m2.textContent = "Caracteres Sin Espacios:" + " ";
 
 let m3 = document.getElementsByClassName("metricas")[2];
-if (m3) m3.textContent = "Palabras:" + " 25";
+if (m3) m3.textContent = "Palabras:" + " ";
 
 let m4 = document.getElementsByClassName("metricas")[3];
-if (m4) m4.textContent = "Números:" + " 9";
+if (m4) m4.textContent = "Números:" + " ";
 
 let m5 = document.getElementsByClassName("metricas")[4];
-if (m5) m5.textContent = "Suma Números:" + " 85";
+if (m5) m5.textContent = "Suma Números:" + " ";
 
 let m6 = document.getElementsByClassName("metricas")[5];
-if (m6) m6.textContent = "Promedio Longitud:" + " 5.23";
+if (m6) m6.textContent = "Promedio Longitud:" + " ";
 
 
 
