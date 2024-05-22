@@ -4,37 +4,22 @@ import analyzer from './analyzer.js';
 
 console.log("Holiis");
 
-///FUNCIONA PERO NO ES UN (addEventListener)
-///document.getElementById("reset-button").reset
 
-///FUNCIONA PERO SEGUN YO DA UN ERROR (CONFIRMAR)
 const button = document.getElementById("reset-button");
 function borrar() {
-reset;
+  textarea.value = "";
 }
 button.addEventListener("click",borrar);
-///                                                                   IDEA 1
-///addEventListener del textarea (FALTA TERMINAR - CONTINUAR CUANDO PUEDA PROBARLO)
-//const textarea = document.querySelector("textarea");
-//function escribir(){
-//}
-//textarea.addEventListener("keydown",escribir);
-
 
 
 ///                                                                   IDEA 2
 //addEventListener del textarea 
   const textarea = document.querySelector("textarea");
-  function escribir(){
-    textarea.value
-  }
-  textarea.addEventListener("input",escribir);
+ // //function escribir(){
+  //  textarea.value
+  //}
+  ////textarea.addEventListener("input",escribir);
 
-
-
-//texto para li caracteres (m1 = métrica 1)                       PRUEBA 1
-//let m1 = document.getElementsByClassName("m1");
-///m1.textContent = "Caracteres:" + "5";
 
 //                                                                 PRUEBA 2
 
@@ -55,19 +40,3 @@ if (m5) m5.textContent = "Suma Números:" + " ";
 
 let m6 = document.getElementsByClassName("metricas")[5];
 if (m6) m6.textContent = "Promedio Longitud:" + " ";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
