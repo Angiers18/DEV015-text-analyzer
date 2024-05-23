@@ -4,25 +4,27 @@ import analyzer from './analyzer.js';
 
 console.log("Holiis");
 
-
+const textarea = document.querySelector("textarea");
 const button = document.getElementById("reset-button");
-function borrar() {
-  textarea.value = "";
+
+
+   //                                                      addEventListener del boton 
+    function borrar() {
+      textarea.value = ""; 
+    }
+    button.addEventListener("click", borrar);
+
+    //                                                      addEventListener del textarea 
+function escribir(){
+  let contenido = textarea.value
+  console.log(contenido.length)
 }
-button.addEventListener("click",borrar);
+textarea.addEventListener("input",escribir);
 
 
-///                                                                   IDEA 2
-//addEventListener del textarea 
-  const textarea = document.querySelector("textarea");
- // //function escribir(){
-  //  textarea.value
-  //}
-  ////textarea.addEventListener("input",escribir);
 
 
-//                                                                 PRUEBA 2
-
+//                                                                 Escribe texto dentro del <li>
 let m1 = document.getElementsByClassName("metricas")[0];
 if (m1) m1.textContent = "Caracteres:" + " ";
 
@@ -30,13 +32,13 @@ let m2 = document.getElementsByClassName("metricas")[1];
 if (m2) m2.textContent = "Caracteres Sin Espacios:" + " ";
 
 let m3 = document.getElementsByClassName("metricas")[2];
-if (m3) m3.textContent = "Palabras:" + " ";
+if (m3) m3.textContent = "Palabras:" +  ""
 
 let m4 = document.getElementsByClassName("metricas")[3];
 if (m4) m4.textContent = "Números:" + " ";
 
 let m5 = document.getElementsByClassName("metricas")[4];
-if (m5) m5.textContent = "Suma Números:" + " ";
+if (m5) m5.textContent = "Suma de Números:" + " ";
 
 let m6 = document.getElementsByClassName("metricas")[5];
-if (m6) m6.textContent = "Promedio Longitud:" + " ";
+if (m6) m6.textContent = "Promedio de Longitud:" + " ";
