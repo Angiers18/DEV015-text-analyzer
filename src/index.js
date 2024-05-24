@@ -16,29 +16,33 @@ const button = document.getElementById("reset-button");
 
     //                                                      addEventListener del textarea 
 function escribir(){
-  let contenido = textarea.value
-  console.log(contenido.length)
+
+  let text = textarea.value
+
+  ////                                                     Escribe en el li (desde el evento)
+
+  if (m1) m1.textContent = "Caracteres: " + analyzer.getCharacterCount(text);
+  if (m2) m2.textContent = "Caracteres Sin Espacios: " + analyzer.getCharacterCountExcludingSpaces(text);
+  if (m3) m3.textContent = "Palabras: " + analyzer.getWordCount(text);
+  if (m4) m4.textContent = "Números: " + " ";
+  if (m5) m5.textContent = "Suma de Números: " + " ";
+  if (m6) m6.textContent = "Promedio de Longitud: " + " ";
 }
 textarea.addEventListener("input",escribir);
 
 
 
+//                                  Selecciona cada li desde el HTML al DOM
 
-//                                                                 Escribe texto dentro del <li>
 let m1 = document.getElementsByClassName("metricas")[0];
-if (m1) m1.textContent = "Caracteres:" + " ";
 
 let m2 = document.getElementsByClassName("metricas")[1];
-if (m2) m2.textContent = "Caracteres Sin Espacios:" + " ";
 
 let m3 = document.getElementsByClassName("metricas")[2];
-if (m3) m3.textContent = "Palabras:" +  ""
 
 let m4 = document.getElementsByClassName("metricas")[3];
-if (m4) m4.textContent = "Números:" + " ";
 
 let m5 = document.getElementsByClassName("metricas")[4];
-if (m5) m5.textContent = "Suma de Números:" + " ";
 
 let m6 = document.getElementsByClassName("metricas")[5];
-if (m6) m6.textContent = "Promedio de Longitud:" + " ";
+
