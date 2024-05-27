@@ -25,7 +25,7 @@ function escribir(){
   if (m2) m2.textContent = "Caracteres Sin Espacios: " + analyzer.getCharacterCountExcludingSpaces(text);
   if (m3) m3.textContent = "Palabras: " + analyzer.getWordCount(text);
   if (m4) m4.textContent = "Números: " + analyzer.getNumberCount(text);
-  if (m5) m5.textContent = "Suma de Números: " + " ";
+  if (m5) m5.textContent = "Suma de Números: " + analyzer.getNumberSum(text);
   if (m6) m6.textContent = "Promedio de Longitud: " + " ";
 }
 textarea.addEventListener("input",escribir);
