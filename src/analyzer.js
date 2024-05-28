@@ -26,20 +26,23 @@ const analyzer = {
 
    //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
   getNumberCount: (text) => {
-
-    return text.match(/[0-9]/g).length
-  
+    const numeros = text.match(/[0-9]/g);
+    if (!numeros) {
+      return 0; //Filtra para tomar solo los numeros
+    }
+    
+      return numeros.length
   },
 
    //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
   getNumberSum: (text) => {
     const numeros = text.match(/[0-9]/g);
     if (!numeros) {
-      return 0;
+      return 0; //Filtra para tomar solo los numeros 
     }
     let resultado = 0;
     for (let i = 0; i < numeros.length; i++ ){
-      resultado += parseFloat(numeros[i]);
+      resultado += parseFloat(numeros[i]); //El bucle para sumar los numeros que se van añadiendo
    }
       return resultado
 
