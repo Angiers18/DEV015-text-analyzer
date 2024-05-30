@@ -2,23 +2,22 @@ import analyzer from './analyzer.js';
 
 //TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
 
-console.log("Holiis");
-
 const textarea = document.querySelector("textarea");
 const button = document.getElementById("reset-button");
 
-
-   //                                                      addEventListener del botón 
-    function borrar() {
-      textarea.value = ""; 
+//                                                      addEventListener del botón 
+function borrar() {
+  textarea.value = ""; 
   
-    }
-    button.addEventListener("click", borrar);
 
-    //                                                      addEventListener del textarea 
+  
+}
+button.addEventListener("click", borrar);
+
+//                                                      addEventListener del textarea 
 function escribir(){
 
-  let text = textarea.value
+  const text = textarea.value
 
   ////                                                     Escribe en el li (desde el evento)
 
