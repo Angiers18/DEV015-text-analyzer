@@ -8,7 +8,7 @@ const textarea = document.querySelector("textarea");
 const button = document.getElementById("reset-button");
 
 
-   //                                                      addEventListener del boton 
+   //                                                      addEventListener del botón 
     function borrar() {
       textarea.value = ""; 
   
@@ -27,7 +27,7 @@ function escribir(){
   document.querySelector("li[data-testid='word-count']").textContent = "Palabras: " + analyzer.getWordCount(text);
   document.querySelector("li[data-testid='number-count']").textContent = "Números: " + analyzer.getNumberCount(text);
   document.querySelector("li[data-testid='number-sum']").textContent = "Suma de Números: " + analyzer.getNumberSum(text);
-  document.querySelector("li[data-testid='word-length-average']").textContent = "Promedio de Longitud: " + " ";
+  document.querySelector("li[data-testid='word-length-average']").textContent = "Promedio de Longitud: " + analyzer.getAverageWordLength(text);
 
 }
 textarea.addEventListener("input",escribir);
