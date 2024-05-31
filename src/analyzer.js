@@ -13,7 +13,6 @@ const analyzer = {
     }  
   },
 
-
   //TODO: esta función debe retornar el recuento de caracteres que se encuentran en el parámetro `text` de tipo `string`.
   getCharacterCount: (text) => {
     return text.length
@@ -39,7 +38,7 @@ const analyzer = {
     for (let i = 0; i < letras.length; i++){
       resultado += letras[i].length
     }
-    // y que el resultado se divida entre (a) CREO
+    // y que el resultado se divida entre palabras
     const longitud = parseFloat(resultado/palabras)
 
     return parseFloat(longitud.toFixed(2))

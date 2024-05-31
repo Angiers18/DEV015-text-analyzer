@@ -8,7 +8,12 @@ const button = document.getElementById("reset-button");
 //                                                      addEventListener del botón 
 function borrar() {
   textarea.value = ""; 
-  
+  document.querySelector("li[data-testid='character-count']").textContent = "Caracteres: " + 0;
+  document.querySelector("li[data-testid='character-no-spaces-count']").textContent = "Caracteres Sin Espacios: " + 0;
+  document.querySelector("li[data-testid='word-count']").textContent = "Palabras: " + 0;
+  document.querySelector("li[data-testid='number-count']").textContent = "Números: " + 0;
+  document.querySelector("li[data-testid='number-sum']").textContent = "Suma de Números: " + 0;
+  document.querySelector("li[data-testid='word-length-average']").textContent = "Promedio de Longitud: " + 0;
 
   
 }
