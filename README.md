@@ -32,7 +32,7 @@ En la parte inferior se encuentra el botón _(Limpiar Métricas)_ al hacer
 click en el se borra el texto introducido y las métricas vuelven a cero (0)   
 
 
-#** Decisiones de diseño 
+#**Decisiones de diseño**
 
 El diseño se basó en un modelo de fácil entendimiento para la usuaria, por
 su simpleza es sencillo de entender ya que las métricas se encuentran en
